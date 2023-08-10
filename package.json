@@ -1,0 +1,35 @@
+{
+  "name": "intro_nodejs_2sem23_3etim_b",
+  "version": "1.0.0",
+  "description": "Aula node JS ETIM 2023",
+  "main": "index.js",
+  "scripts": { 
+    "start": "node index.js", 
+    "dev" : "nodemon index.js", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewertonjsilva/intro_nodejs_2sem23_3etim_b.git"
+  },
+  "keywords": [
+    "Aula node",
+    "Introdução",
+    "API"
+  ],
+  "author": "Ewerton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ewertonjsilva/intro_nodejs_2sem23_3etim_b/issues"
+  },
+  "homepage": "https://github.com/ewertonjsilva/intro_nodejs_2sem23_3etim_b#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"    
+  }, 
+  "devDependencies" : {
+    "nodemon": "^3.0.1"
+  }
+}
+
