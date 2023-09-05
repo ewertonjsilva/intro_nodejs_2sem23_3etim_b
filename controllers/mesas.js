@@ -4,7 +4,12 @@ const db = require('../database/connection');
 module.exports = {
     async listarMesas(request, response) {
         try {
-            return response.status(200).json({confirma: 'Listar Mesas'});
+            // armazena instrução SQL na constante sql
+            const sql = 'SELECT mes_id, mes_nome, mes_status, mes_lugares, ped_id FROM mesas;'; 
+            // execução da instrução SQL com o resultado gravado na constante mesas
+            const mesas = await db.query(sql);
+            // retorna o resultado da requisição
+            return response.status(200).json(mesas[0]);
         } catch (error) {
             return response.status(500).json({confirma: 'Erro', message: error});
         }
